@@ -1,0 +1,95 @@
+---
+layout: default
+---
+
+        {% include header.html %}
+        <!-- Main -->
+				<div id="main" class="wrapper style1">
+					<div class="container">
+						<header class="major">
+							<h2>Security</h2>
+							<p>How to report security issues to <span class="logo">Qaclana</span>.</p>
+						</header>
+					  <section>
+              <header>
+								<p>Thank you for taking your time to read this page. We have secure coding on our heads and fingertips when writing <span class="logo">Qaclana</span>, but we are sure that someone, somewhere, might (or will) find a way to circumvent our protections.</p>
+							</header>
+							<header>
+								<h4>If you find something suspicious and want to report it, we'd really appreciate! Ways to report it:</h4>
+										<ul>
+											<li>Contact us on our <a href="https://chat.qaclana.io">chat server</a>.</li>
+											<li>Send a message to <a href="mailto:security@qaclana.io">security@qaclana.io</a>. Ideally, encrypt it using our <a href="https://sks-keyservers.net/pks/lookup?op=get&search=0x2001344ABE4E3BE7">published key</a>, which should match the one shown below.</li>
+											<li>Merge request on GitLab: if you can, fork the affected repository and send us a merge request. We really prefer if you'd talk to us before, though, as our repositories are public and we would like to give a heads up to our users before disclosing it publicly.</li>
+										</ul>
+							</header>
+							<header>
+							  <h4>Our PGP key</h4>
+							  <p>No matter what channel you choose to communicate with us, feel free to encrypt your message using our <a href="https://sks-keyservers.net/pks/lookup?op=get&search=0x2001344ABE4E3BE7">published key</a>, which should match the one shown below. If you are new to PGP, you can run the following command to encrypt a file called "message.txt":
+							  <ol>
+                  <li>Receive our keys from the key server: <pre>gpg --keyserver sks-keyservers.net --recv-keys 2001344ABE4E3BE7</pre></li>
+								  <li>Encrypt a "message.txt" file into "message.txt.asc": <pre>gpg -ea -r 2001344ABE4E3BE7 message.txt</pre></li>
+							  </ol>
+							</p>
+							</header>
+							<header>
+							  <h4>Our published key should match this one:</h4>
+							  <pre>
+							    <code class="align-center">
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+Version: GnuPG v2
+
+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
++qIA5Q==
+=RwMN
+-----END PGP PUBLIC KEY BLOCK-----
+							    </code>
+							  </pre>
+					    </header>
+					  </section>
+					</div>
+				</div>

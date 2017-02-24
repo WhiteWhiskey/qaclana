@@ -9,32 +9,32 @@
 		<title>Qaclana</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 8]><script src="http://localhost:4000/assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="http://localhost:4000/assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="http://localhost:4000/assets/css/ie8.css" /><![endif]-->
 	</head>
 	<body class="landing">
 		<div id="page-wrapper">
 
 		        			<!-- Header -->
 				<header id="header">
-					<h1 id="logo"><a href="#">Qaclana</a></h1>
+					<h1 class="logo" id="logo"><a href="http://localhost:4000">Qaclana</a></h1>
 					<nav id="nav">
 						<ul>
-							<li><a href="#">Home</a></li>
+							<!-- <li><a href="http://localhost:4000">Home</a></li> -->
 							<li>
 							  <a href="#">Community</a>
 								<ul>
-									<li><a href="#">Code repository</a></li>
-									<li><a href="#">Chat</a></li>
-									<li><a href="#">Issues</a></li>
-									<li><a href="#">Contributing</a></li>
+									<li><a href="https://gitlab.com/qaclana" target="_blank">Code repository</a></li>
+									<li><a href="https://chat.qaclana.io/" target="_blank">Chat</a></li>
+									<li><a href="https://tree.taiga.io/project/jpkroehling-qaclana/" target="_blank">Issues</a></li>
+									<li><a href="/contributing">Contributing</a></li>
 								</ul>
 							</li>
-							<li><a href="#">Blog</a></li>
-							<li><a href="#">Getting started</a></li>
-							<li><a href="#">About</a></li>
+							<li><a href="https://blog.qaclana.io" target="_blank">Blog</a></li>
+							<li><a href="/getting-started">Getting started</a></li>
+							<li><a href="/about">About</a></li>
 						</ul>
 					</nav>
 				</header>
@@ -42,7 +42,10 @@
 				<section id="banner">
 					<div class="content">
 						<header>
-							<h2 class="align-center">Qaclana</h2>
+						  <span class="image">
+						    <img src="http://localhost:4000/images/icon_1.png">
+						  </span>
+							<h2 class="align-center logo">Qaclana</h2>
 							<p class="align-center">Modern Web Application Firewall in the open.</p>
 						</header>
 					</div>
@@ -54,8 +57,8 @@
 						<div class="container">
 							<div class="row">
 								<div class="align-center">
-									<p>Qaclana is an open source project, aimed to creating a modern Web Application Firewall in the open. We believe that security is something that should be easy to adopt, be it by big corporations with a dedicated security team, be it by one-person web shops.</p>
-									<p>At this stage, there's no company behind Qaclana and it's being financially supported by the project's founder.</p>
+									<p><span class="logo">Qaclana</span> is an open source project, aimed to creating a modern Web Application Firewall in the open. We believe that security is something that should be easy to adopt, be it by big corporations with a dedicated security team, be it by one-person web shops.</p>
+									<p>At this stage, there's no company behind <span class="logo">Qaclana</span> and it's being financially supported by the project's founder.</p>
 								</div>
 							</div>
 						</div>
@@ -71,7 +74,7 @@
 						</header>
 						<p>Once the server is available again, the proxies and filters resumes the communication. This means that your site or service is always available and protected, no matter what.</p>
 						<ul class="actions">
-							<li><a href="#" class="button">Learn More</a></li>
+							<li><a href="http://localhost:4000/getting-started" class="button">Learn More</a></li>
 						</ul>
 					</div>
 				</section>
@@ -83,15 +86,15 @@
 							<h2>Scalable</h2>
 							<p>Architected in a way that has, from day 1, support for multiple instances of the proxy, filter and server.</p>
 						</header>
-						<p>This means that Qaclana can be used in highly available scenarios, able to scale the parts that needs scaling for your specific scenario.</p>
+						<p>This means that <span class="logo">Qaclana</span> can be used in highly available scenarios, able to scale the parts that needs scaling for your specific scenario.</p>
 						<ul class="actions">
-							<li><a href="#" class="button">Learn More</a></li>
+							<li><a href="http://localhost:4000/getting-started" class="button">Learn More</a></li>
 						</ul>
 					</div>
 				</section>
         			<!-- Two -->
-				<section id="four" class="spotlight style2 right">
-					<span class="image fit main"><img src="https://images.pexels.com/photos/39290/mother-board-electronics-computer-board-39290.jpeg?w=1260&h=750" alt="" /></span>
+				<section id="four" class="spotlight style4 right">
+					<span class="image fit main"><img src="https://images.pexels.com/photos/158918/pexels-photo-158918.jpeg?w=1260&h=750" alt="" /></span>
 					<div class="content">
 						<header>
 							<h2>Open Source</h2>
@@ -99,7 +102,7 @@
 						</header>
 						<p>Being open source means that anyone can use it for free, anyone can inspect and audit it, and anyone can contribute new features and bug fixes.</p>
 						<ul class="actions">
-							<li><a href="#" class="button">Learn More</a></li>
+							<li><a href="http://localhost:4000/getting-started" class="button">Learn More</a></li>
 						</ul>
 					</div>
 				</section>
@@ -107,30 +110,30 @@
 				<section id="five" class="wrapper style1 special fade-up">
 					<div class="container">
 						<header class="major">
-							<h2>Qaclana</h2>
-							<p>Qaclana is split into several modules, each with its own capabilities.</p>
+						    <img class="image image-icon" src="http://localhost:4000/images/icon_1.png">
+							<p><span class="logo">Qaclana</span> is split into several modules, each with its own capabilities.</p>
 						</header>
 						<div class="box alt">
 							<div class="row uniform">
 								<section class="6u 6u(medium) 12u$(xsmall)">
-									<span class="icon alt major fa-area-chart"></span>
+									<span class="icon alt major fa-cog"></span>
 									<h3>Flexible</h3>
 									<p>You choose how to use Qaclana: at or behind your SSL termination point, all-in-one or with each component on its own box, on containers or bare metals, ...</p>
 								</section>
 								<section class="6u 6u$(medium) 12u$(xsmall)">
-									<span class="icon alt major fa-comment"></span>
+									<span class="icon alt major fa-database"></span>
 									<h3>Protects your backend</h3>
-									<p>Qaclana compares the source of the request against common attack databases, blocking it before it even reaches your backend. It also learns how your website behaves, protecting it from data leaks.</p>
+									<p><span class="logo">Qaclana</span> compares the source of the request against common attack databases, blocking it before it even reaches your backend. It also learns how your website behaves, protecting it from data leaks.</p>
 								</section>
 								<section class="6u 6u(medium) 12u$(xsmall)">
-									<span class="icon alt major fa-flask"></span>
+									<span class="icon alt major fa-tachometer"></span>
 									<h3>Intuitive dashboard</h3>
 									<p>Get an insight into what's going on in security terms on your website. Get to know how many attack attempts there are, in real time. Enable, disable or switch working modes for your whole farm with a single click.</p>
 								</section>
 								<section class="6u 6u$(medium) 12u$(xsmall)">
-									<span class="icon alt major fa-paper-plane"></span>
+									<span class="icon alt major fa-fighter-jet"></span>
 									<h3>Fast</h3>
-									<p>A few milliseconds is all Qaclana needs to decide whether or not to block a request and keep your site or service secure. Generally, Qaclana is done in under 50ms.</p>
+									<p>A few milliseconds is all <span class="logo">Qaclana</span> needs to decide whether or not to block a request and keep your site or service secure. Generally, <span class="logo">Qaclana</span> is done in under 50ms.</p>
 								</section>
 							</div>
 						</div>
@@ -141,22 +144,19 @@
 					<div class="container">
 						<header>
 							<h2>Come help us with the v1</h2>
-							<p>We are still building our first version of Qaclana.</p>
+							<p>We are still building our first version of <span class="logo">Qaclana</span>.</p>
 						</header>
-						<a href="#" class="button">Come help us</a>
+						<a href="http://localhost:4000/contributing" class="button">Come help us</a>
 					</div>
 				</section>
 				
 
 			<!-- Footer -->
 				<footer id="footer">
+				  <p class="align-center">Do you have a security issue to <a href="http://localhost:4000/security">report</a>?</p>
 					<ul class="icons">
-						<li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
-						<li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
-						<li><a href="#" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
+						<li><a href="https://twitter.com/qaclana" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="https://gitlab.com/qaclana" class="icon alt fa-gitlab"><span class="label">GitLab</span></a></li>
 					</ul>
 					<ul class="copyright">
 						<li>&copy; Juraci Paixão Kröhling. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
@@ -166,14 +166,14 @@
 		</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
+			<script src="http://localhost:4000/assets/js/jquery.min.js"></script>
+			<script src="http://localhost:4000/assets/js/jquery.scrolly.min.js"></script>
+			<script src="http://localhost:4000/assets/js/jquery.dropotron.min.js"></script>
+			<script src="http://localhost:4000/assets/js/jquery.scrollex.min.js"></script>
+			<script src="http://localhost:4000/assets/js/skel.min.js"></script>
+			<script src="http://localhost:4000/assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
+			<script src="http://localhost:4000/assets/js/main.js"></script>
 
 	</body>
 </html>
