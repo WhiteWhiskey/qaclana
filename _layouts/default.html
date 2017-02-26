@@ -13,6 +13,26 @@
 		<link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/assets/css/main.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/assets/css/ie8.css" /><![endif]-->
+
+		<!--Page Specific Metadata-->
+    <meta name="description" content=""/>
+
+    <!--Open Graph Metadata-->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="{{ page.title }}"/>
+    <meta property="og:description" content="{{ page.description }}" />
+    <meta property="og:image" content="{{ site.logo }}" />
+    <meta property="og:site_name" content="{{ page.url }}" />
+    <meta property="og:url" content="{{ page.url }}" />
+
+    <!--Twitter Card Metadata-->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:url" content="{{ page.url }}" />
+    <meta name="twitter:title" content="{{ page.title }}"/>
+    <meta name="twitter:description" content="{{ page.description }}" />
+    <meta name="twitter:image:src" content="{{ site.url }}/{{ site.baseurl }}/images/{{ site.logo }}" />
+    <meta name="twitter:site" content="@qaclana" />
+
 	</head>
 	<body class="landing">
 		<div id="page-wrapper">

@@ -1,3 +1,6 @@
 name: Qaclana
 description: Qaclana Web Application Firewall
+url: https://qaclana.io
 baseurl: "/qaclana"
+icon: icon.png
+logo: logo.jpg
