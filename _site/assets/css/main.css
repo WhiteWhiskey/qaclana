@@ -3426,7 +3426,7 @@
 
 	body.is-touch #banner {
 		background-attachment: scroll;
-	}
+	}	
 
 /* Footer */
 
@@ -3929,6 +3929,13 @@
 
 	}
 
+	@media screen and (max-width: 768px) {
+		/* Hide on mobile */
+      .mobile-hide {
+        display: none !important;
+      }
+  }
+
 /* XSmall */
 
 	@media screen and (max-width: 480px) {
@@ -3999,6 +4006,11 @@
 			}
 
 		/* Banner */
+
+		  #banner {
+		  	background-size: 250% 100%;
+		  	background-repeat: no-repeat;
+		  }
 
 			#banner .content {
 				padding: 3em 1.5625em 5.25em 1.5625em;
